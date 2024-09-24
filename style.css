@@ -1,13 +1,9 @@
-
-html{
-    height:100vh;
-    min-width: 600px;
+html {
+    height: 100vh;
     background-image: linear-gradient(150deg, #abfa93, #1a6d01);
     background-repeat: no-repeat;
     background-size: auto;
 }
-
-
 
 body {
     font-family: Arial, sans-serif;
@@ -20,23 +16,38 @@ input {
     width: 200px;
 }
 
-button[type="submit"] {
-    font-size:1.5rem;
-    background-color: #ffffff00; 
-    outline:0;
+
+button#addText {
+    font-size: 1.5rem;
+    background-color: transparent;
+    outline: 0;
     border: none;
+    color: darkgreen;
 }
-#clearAll{
-    display:flex;
-    justify-content: flex-end;
-    padding:10px;
-    cursor:pointer;
-    font-size:0.9rem
+
+button#addText:hover {
+    color: lightgreen;
+    
 }
+
+
+button#clearAll {
+    font-size: 0.9rem;
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 20px 0;
 }
-#clearAll:hover{
-    color:lightgreen
+
+button#clearAll:hover {
+    background-color: lightgreen;
+    color: black;
 }
+
 p {
     font-size: 18px;
     color: black;
@@ -58,3 +69,11 @@ li {
 }
 
 
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
