@@ -1,0 +1,60 @@
+
+html{
+    height:100vh;
+    min-width: 600px;
+    background-image: linear-gradient(150deg, #abfa93, #1a6d01);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    width: 600px;
+    margin: auto;
+}
+
+input {
+    padding: 8px;
+    width: 200px;
+}
+
+button[type="submit"] {
+    font-size:1.5rem;
+    background-color: #ffffff00; 
+    outline:0;
+    border: none;
+}
+#clearAll{
+    display:flex;
+    justify-content: flex-end;
+    padding:10px;
+    cursor:pointer;
+    font-size:0.9rem
+}
+}
+#clearAll:hover{
+    color:lightgreen
+}
+p {
+    font-size: 18px;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: grey; 
+}
+
+
