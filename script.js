@@ -1,3 +1,4 @@
+
 const addText = document.querySelector("#addText");
 const clearAllBtn = document.querySelector("#clearAll");
 const listedItems = [];
