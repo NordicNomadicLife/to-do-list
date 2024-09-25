@@ -27,7 +27,7 @@ button#addText {
 
 button#addText:hover {
     color: lightgreen;
-    
+
 }
 
 
@@ -65,7 +65,7 @@ li {
 
 .completed {
     text-decoration: line-through;
-    color: grey; 
+    color: grey;
 }
 
 
