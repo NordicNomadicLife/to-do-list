@@ -54,8 +54,8 @@ p {
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+    
+    padding: 15px;
 }
 
 li {
