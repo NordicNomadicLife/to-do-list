@@ -3,52 +3,57 @@ html {
     background-image: linear-gradient(180deg, #ffc0c1, #FD9795);
     background-repeat: no-repeat;
     background-size: auto;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman ps', Times, serif;
     font-weight: bold;
 }
+
 body {
-    
+
     width: fit-content;
     /*padding: 5px 80px 30px;*/
     margin: 10px auto;
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    padding: 5px 50px 10px;
+    padding: 0px 70px 10px;
 
 }
 
-h1{
+h1 {
     text-align: center;
     font-weight: bolder;
     font-size: 40px;
-    
+    margin-bottom: 10px;
+
 }
 
-p{
-    text-align: center;  
+p {
+    text-align: center;
     font-size: 12px;
-    
+    margin-bottom: 20px;
 }
 
-#input1{
+#input1 {
 
-    border-color: blue;
+
     border-radius: 0.4cap;
+    font-weight: bold;
+    border: solid, #7D9BC4;
+
 }
 
-ul{
+ul {
     text-align: center;
     list-style-type: none;
     font-size: 20px;
 }
 
-.delete-btn{
+.delete-btn {
 
     background-color: transparent;
     border: none;
-    font-size:1.2rem;
+    font-size: 1.2rem;
 }
 
-#addText{
+#addText {
     font-weight: bold;
 }
