@@ -40,7 +40,7 @@ p {
     text-align: center;
     font-size: 12px;
     margin-bottom: 20px;
-    font: verdana;
+    font-family: Verdana, sans-serif;
 }
 
 #input1 {
@@ -53,7 +53,11 @@ p {
 }
 
 #input1:focus{
+    border-radius: 0.4cap;
+    font-weight: bold;
+    border: solid;
     border-color:#7D9BC4 ;
+    outline: none;
 }
 #input1::content{
     border-color:#7D9BC4 ;
@@ -68,11 +72,15 @@ ul {
     animation-timing-function: ease-in-out;
     animation-duration: 0.5s; 
 }
-ul:hover{
+ul li  :hover{
     text-decoration: line-through;
 }
-.delete-btn {
 
+ul li{
+    cursor: pointer;
+}
+.delete-btn {
+    cursor:pointer;
     background-color: transparent;
     border: none;
     font-size: 1.2rem;
@@ -85,7 +93,30 @@ ul:hover{
     text-decoration: line-through;
     color: grey;
 }
+.warning {
+    color: red;
+    text-align: center;
+    display: none; 
+    font-size: 10px;
+    animation-name: warningText;
+    animation-duration: 1s;
+}
 
+@keyframes warningText{
+
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
 
 @keyframes intro{
     0%{
@@ -116,15 +147,17 @@ ul:hover{
     animation-delay: 1s; 
   }
 
-  @keyframes tasks{
-    0%{
+  @keyframes tasks {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
         transform: translateY(0);
+        opacity: 1;
     }
-    50%{
-        transform: translateY(50px);
-    }
-    100%{
-        transform: translateY(0);
-    }
+}
 
+.animated-task {
+    animation: tasks 0.5s ease-in-out forwards;
 }
