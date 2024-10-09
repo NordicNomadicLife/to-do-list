@@ -15,7 +15,17 @@ body {
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     padding: 0px 70px 10px;
+    animation-name: intro;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s; 
+}
 
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-timing-function:  ;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
 }
 
 h1 {
@@ -30,6 +40,7 @@ p {
     text-align: center;
     font-size: 12px;
     margin-bottom: 20px;
+    font: verdana;
 }
 
 #input1 {
@@ -37,16 +48,29 @@ p {
 
     border-radius: 0.4cap;
     font-weight: bold;
-    border: solid, #7D9BC4;
+    border: solid,;
 
+}
+
+#input1:focus{
+    border-color:#7D9BC4 ;
+}
+#input1::content{
+    border-color:#7D9BC4 ;
 }
 
 ul {
     text-align: center;
     list-style-type: none;
     font-size: 20px;
+    background-color: white;
+    animation-name: tasks;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s; 
 }
-
+ul:hover{
+    text-decoration: line-through;
+}
 .delete-btn {
 
     background-color: transparent;
@@ -56,4 +80,51 @@ ul {
 
 #addText {
     font-weight: bold;
+}
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+
+@keyframes intro{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+.delay-1 {
+    animation-delay: 0s; 
+  }
+  
+  .delay-2 {
+    animation-delay: 0.5s; 
+  }
+  
+  .delay-3 {
+    animation-delay: 1s; 
+  }
+
+  @keyframes tasks{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
 }
