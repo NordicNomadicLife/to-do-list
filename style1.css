@@ -17,13 +17,12 @@ body {
     padding: 0px 70px 10px;
     animation-name: intro;
     animation-timing-function: ease-in-out;
-    animation-duration: 0.5s; 
+    animation-duration: 0.5s;
 }
 
-.fade-in{
+.fade-in {
     opacity: 0;
     animation: fadeIn 1s;
-    animation-timing-function:  ;
     animation-fill-mode: forwards;
     animation-delay: 0.5s;
 }
@@ -48,19 +47,20 @@ p {
 
     border-radius: 0.4cap;
     font-weight: bold;
-    border: solid,;
+    border: solid, 2px, gray;
 
 }
 
-#input1:focus{
+#input1:focus {
     border-radius: 0.4cap;
     font-weight: bold;
     border: solid;
-    border-color:#7D9BC4 ;
+    border-color: #7D9BC4;
     outline: none;
 }
-#input1::content{
-    border-color:#7D9BC4 ;
+
+#input1::content {
+    border-color: #7D9BC4;
 }
 
 ul {
@@ -70,17 +70,20 @@ ul {
     background-color: white;
     animation-name: tasks;
     animation-timing-function: ease-in-out;
-    animation-duration: 0.5s; 
+    animation-duration: 0.5s;
 }
-ul li  :hover{
+
+ul li :hover {
     text-decoration: line-through;
 }
 
-ul li{
+
+ul li {
     cursor: pointer;
 }
+
 .delete-btn {
-    cursor:pointer;
+    cursor: pointer;
     background-color: transparent;
     border: none;
     font-size: 1.2rem;
@@ -89,69 +92,79 @@ ul li{
 #addText {
     font-weight: bold;
 }
+
 .completed {
     text-decoration: line-through;
     color: grey;
 }
+
 .warning {
     color: red;
     text-align: center;
-    display: none; 
+    display: none;
     font-size: 10px;
     animation-name: warningText;
     animation-duration: 1s;
 }
 
-@keyframes warningText{
+@keyframes warningText {
 
-    0%{
+    0% {
         opacity: 1;
     }
-    25%{
+
+    25% {
         opacity: 0;
     }
-    50%{
+
+    50% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
 }
 
-@keyframes intro{
-    0%{
+@keyframes intro {
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(50px);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 
 }
-@keyframes fadeIn{
-    to{
+
+@keyframes fadeIn {
+    to {
         opacity: 1;
     }
 }
-.delay-1 {
-    animation-delay: 0s; 
-  }
-  
-  .delay-2 {
-    animation-delay: 0.5s; 
-  }
-  
-  .delay-3 {
-    animation-delay: 1s; 
-  }
 
-  @keyframes tasks {
+.delay-1 {
+    animation-delay: 0s;
+}
+
+.delay-2 {
+    animation-delay: 0.5s;
+}
+
+.delay-3 {
+    animation-delay: 1s;
+}
+
+@keyframes tasks {
     0% {
         transform: translateY(20px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
