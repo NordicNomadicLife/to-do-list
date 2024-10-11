@@ -9,7 +9,7 @@ label.innerText = `${completedCount} completed`;
 function updateListeners() {
     const items = document.querySelectorAll("ul li");
     items.forEach((item, index) => {
-        const deleteBtn = item.querySelector(".delete-btn");
+        const deleteBtn = item.querySelector(".deleteBtn");
         item.addEventListener("click", function (event) {
             if (event.target !== deleteBtn) {
                 if (item.classList.contains("completed")) {
@@ -48,7 +48,7 @@ addText.addEventListener("click", function (e) {
         const newListItem = document.createElement("li");
         newListItem.innerHTML = `
             <span>${text}</span>
-            <button class="delete-btn">🗑</button>
+            <button class="deleteBtn">🗑</button>
         `;
         newListItem.classList.add('animated-task'); // Lägg till animation
 

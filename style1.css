@@ -3,14 +3,12 @@ html {
     background-image: linear-gradient(180deg, #ffc0c1, #FD9795);
     background-repeat: no-repeat;
     background-size: auto;
-    font-family: 'Times New Roman ps', Times, serif;
+    font-family: "Times New Roman ps", Times, serif;
     font-weight: bold;
 }
 
 body {
-
     width: fit-content;
-    /*padding: 5px 80px 30px;*/
     margin: 10px auto;
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -20,9 +18,9 @@ body {
     animation-duration: 0.5s;
 }
 
-.fade-in {
+.fadeIn {
     opacity: 0;
-    animation: fadeIn 1s;
+    animation: fadeInText 1s;
     animation-fill-mode: forwards;
     animation-delay: 0.5s;
 }
@@ -32,7 +30,6 @@ h1 {
     font-weight: bolder;
     font-size: 40px;
     margin-bottom: 10px;
-
 }
 
 p {
@@ -43,12 +40,9 @@ p {
 }
 
 #input1 {
-
-
     border-radius: 0.4cap;
     font-weight: bold;
-    border: solid, 2px, gray;
-
+    border: 2px solid gray;
 }
 
 #input1:focus {
@@ -73,7 +67,7 @@ ul {
     animation-duration: 0.5s;
 }
 
-ul li :hover {
+ul li span:hover {
     text-decoration: line-through;
 }
 
@@ -82,7 +76,7 @@ ul li {
     cursor: pointer;
 }
 
-.delete-btn {
+.deleteBtn {
     cursor: pointer;
     background-color: transparent;
     border: none;
@@ -108,7 +102,6 @@ ul li {
 }
 
 @keyframes warningText {
-
     0% {
         opacity: 1;
     }
@@ -138,24 +131,23 @@ ul li {
     100% {
         transform: translateY(0);
     }
-
 }
 
-@keyframes fadeIn {
+@keyframes fadeInText {
     to {
         opacity: 1;
     }
 }
 
-.delay-1 {
+.delay1 {
     animation-delay: 0s;
 }
 
-.delay-2 {
-    animation-delay: 0.5s;
+.delay2 {
+    animation-delay: 0.75s;
 }
 
-.delay-3 {
+.delay3 {
     animation-delay: 1s;
 }
 
